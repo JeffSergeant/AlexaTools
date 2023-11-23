@@ -9,8 +9,6 @@ import threading
 
 # Create a PyAudio instance
 # Print the list of available audio devices
-
-
 def identify_devices(printDevices=True, sayDevices=False):
 
     p = pyaudio.PyAudio()
@@ -224,7 +222,7 @@ def hear_response(phrase_time_limit = 30,timeout=3,ambient_noise = 'ambient_nois
 if __name__ == '__main__':
 
     
-    MY_DEVICE = "Speakers (Realtek(R) Audio)" ## Insert your devince name here, if you don't know it, uncomment the following line
+    MY_DEVICE = "Speakers (Realtek(R) Audio)" ## Insert your device name here, if you don't know it, uncomment the following line
 
     #identify_devices(printDevices=True, sayDevices= True)
 
